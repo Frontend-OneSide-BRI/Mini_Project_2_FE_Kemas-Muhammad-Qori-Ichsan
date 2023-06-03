@@ -1,7 +1,7 @@
 import React from "react";
 
-const galleryDetails = () => {
+const GalleryDetails = () => {
     return <div>galleryDetails</div>;
 };
 
-export default galleryDetails;
+export default GalleryDetails;
