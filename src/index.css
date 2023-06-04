@@ -27,7 +27,7 @@
         @apply bg-orange rounded-xl mx-3 px-7 py-2 transition duration-200 border-2 hover:bg-transparent hover:text-black border-black shadow-[0.2rem_0.2rem_black] hover:scale-105;
     }
     .btnSecondaryOrange {
-        @apply bg-orange text-white rounded-xl px-4 py-1 text-sm mx-2 transition duration-200 border-2 hover:text-black border-black shadow-[0.2rem_0.2rem_black] hover:bg-transparent hover:scale-105;
+        @apply bg-orange text-white rounded-xl px-4 py-1 text-sm mx-2 mt-3 md:mt-0 transition duration-200 border-2 hover:text-black border-black shadow-[0.2rem_0.2rem_black] hover:bg-transparent hover:scale-105;
     }
     .btnTransparent {
         @apply rounded-xl mx-3 px-7 py-2 transition duration-200 border-2 hover:text-white border-black shadow-[0.2rem_0.2rem_black] hover:bg-orange hover:scale-105;
