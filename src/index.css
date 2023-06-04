@@ -4,5 +4,41 @@
 
 @font-face {
     font-family: "violet";
-    src: url("./fonts/VioletSans-Regular.ttf");
+    src: url("./assets/fonts/VioletSans-Regular.ttf");
+}
+
+@layer components {
+    .customShadow {
+        @apply shadow-[0.2rem_0.2rem_black];
+    }
+    .customShadow {
+        @apply shadow-[0.2rem_0.2rem_black];
+    }
+    .bigShadow {
+        @apply shadow-[.6rem_.6rem_black];
+    }
+    .btnPurple {
+        @apply bg-purple hover:bg-transparent transition duration-200 rounded-xl mx-3 px-7 py-2 text-white hover:text-black border-2 border-black shadow-[0.2rem_0.2rem_black] hover:scale-105;
+    }
+    .btnSecondaryPurple {
+        @apply bg-purple text-white rounded-xl px-4 py-1 text-sm mx-2 transition duration-200 border-2 hover:text-black border-black shadow-[0.2rem_0.2rem_black] hover:bg-transparent hover:scale-105;
+    }
+    .btnOrange {
+        @apply bg-orange rounded-xl mx-3 px-7 py-2 transition duration-200 border-2 hover:bg-transparent hover:text-black border-black shadow-[0.2rem_0.2rem_black] hover:scale-105;
+    }
+    .btnSecondaryOrange {
+        @apply bg-orange text-white rounded-xl px-4 py-1 text-sm mx-2 transition duration-200 border-2 hover:text-black border-black shadow-[0.2rem_0.2rem_black] hover:bg-transparent hover:scale-105;
+    }
+    .btnTransparent {
+        @apply rounded-xl mx-3 px-7 py-2 transition duration-200 border-2 hover:text-white border-black shadow-[0.2rem_0.2rem_black] hover:bg-orange hover:scale-105;
+    }
+    .btnSecondaryTransparent {
+        @apply rounded-xl px-4 py-1 text-sm mx-2 transition duration-200 border-2 hover:text-white border-black shadow-[0.2rem_0.2rem_black] hover:bg-purple hover:scale-105;
+    }
+    .link {
+        @apply font-bold hover:text-[#6D60FE] transition duration-200 hover:border-b-2 mx-5 hover:border-[#6D60FE];
+    }
+    .activeLink {
+        @apply mx-5 text-[#6D60FE] transition duration-200 border-b-2 border-[#6D60FE];
+    }
 }

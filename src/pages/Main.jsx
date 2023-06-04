@@ -1,3 +1,4 @@
+import Featured from "../components/Featured";
 import Heroes from "../components/Heroes";
 import Navbar from "../components/Navbar";
 
@@ -9,6 +10,7 @@ function Main() {
         <>
             <Navbar />
             <Heroes />
+            <Featured />
         </>
     );
 }

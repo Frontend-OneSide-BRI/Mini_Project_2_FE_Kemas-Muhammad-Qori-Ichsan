@@ -1,10 +1,7 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import Button from "./Button";
 
 const Heroes = () => {
-    const location = useLocation();
-    console.log(location.pathname);
-
     return (
         <div className="w-screen h-screen flex justify-center items-center bg-base font-violet">
             <div className="text-center">
@@ -27,13 +24,11 @@ const Heroes = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Harum, ad.
                 </p>
-                <p>
+                <p className="mb-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Earum, quibusdam error. Reiciendis possimus tempora earum?
                 </p>
-                <button className="shadow-black px-5 py-2 text-white bg-purple mt-3 rounded-3xl border-2 border-black">
-                    Explore More <span className="text-xs ml-1">&gt;</span>
-                </button>
+                <Button text="Explore More" type="btnPurple" />
             </div>
         </div>
     );

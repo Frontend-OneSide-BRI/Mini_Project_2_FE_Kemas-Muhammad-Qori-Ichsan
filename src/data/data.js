@@ -2,7 +2,7 @@ const allData = [
     {
         id: 1,
         name: 'Preparing Video Game GIF by CAPCOM"',
-        category: "Trendings",
+        category: "GIFs",
         username: "Capcom",
         slug: "Capcom-street-fighter-ryu-sf6-Y3OK72WcbCNkEYkZuI",
         image: "https://media0.giphy.com/media/Y3OK72WcbCNkEYkZuI/giphy-downsized.gif?cid=e08e54c1vcmezq4qjfrpby1vvkjgyz14l8iichwv44ogkjng&ep=v1_gifs_trending&rid=giphy-downsized.gif&ct=g",
@@ -10,7 +10,7 @@ const allData = [
     {
         id: 2,
         name: "Good Night GIF",
-        category: "Trendings",
+        category: "GIFs",
         username: "Nonetheless",
         slug: "tongue-goodnight-sJWNLTclcvVmw",
         image: "https://media0.giphy.com/media/sJWNLTclcvVmw/giphy.gif?cid=e08e54c1vcmezq4qjfrpby1vvkjgyz14l8iichwv44ogkjng&ep=v1_gifs_trending&rid=giphy.gif&ct=g",
@@ -18,7 +18,7 @@ const allData = [
     {
         id: 3,
         name: "Video Game Victory GIF by CAPCOM",
-        category: "Trendings",
+        category: "GIFs",
         username: "Capcom",
         slug: "Capcom-street-fighter-ryu-sf6-TBQo9WoA18hdQ6U4nN",
         image: "https://media1.giphy.com/media/TBQo9WoA18hdQ6U4nN/giphy-downsized.gif?cid=e08e54c1vcmezq4qjfrpby1vvkjgyz14l8iichwv44ogkjng&ep=v1_gifs_trending&rid=giphy-downsized.gif&ct=g",
@@ -26,7 +26,7 @@ const allData = [
     {
         id: 4,
         name: "Happy Birthday GIF by Jelene",
-        category: "Trendings",
+        category: "GIFs",
         username: "Jelene",
         slug: "happybirthday-bday-hbday-hkE6wynetELGa7xOjq",
         image: "https://media4.giphy.com/media/hkE6wynetELGa7xOjq/giphy.gif?cid=e08e54c1vcmezq4qjfrpby1vvkjgyz14l8iichwv44ogkjng&ep=v1_gifs_trending&rid=giphy.gif&ct=g",
@@ -34,7 +34,7 @@ const allData = [
     {
         id: 5,
         name: "Happy I Love You GIF by Warner Bros.",
-        category: "Trendings",
+        category: "GIFs",
         username: "warnerbrosde",
         slug: "warnerbrosde-R6gvnAxj2ISzJdbA63",
         image: "https://media1.giphy.com/media/R6gvnAxj2ISzJdbA63/giphy-downsized.gif?cid=e08e54c1vcmezq4qjfrpby1vvkjgyz14l8iichwv44ogkjng&ep=v1_gifs_trending&rid=giphy-downsized.gif&ct=g",
@@ -42,7 +42,7 @@ const allData = [
     {
         id: 6,
         name: "Time For Bed Massage GIF",
-        category: "Trendings",
+        category: "GIFs",
         username: "Nonetheless",
         slug: "ywmoTiRyU43iU",
         image: "https://media4.giphy.com/media/ywmoTiRyU43iU/giphy-downsized.gif?cid=e08e54c1ia4isc5dxa6hmpxeq7pbazm7q307a33zx9vokybc&ep=v1_gifs_trending&rid=giphy-downsized.gif&ct=g",
@@ -50,7 +50,7 @@ const allData = [
     {
         id: 7,
         name: "Time For Bed Massage GIF",
-        category: "Trendings",
+        category: "GIFs",
         username: "Nonetheless",
         slug: "ywmoTiRyU43iU",
         image: "https://media4.giphy.com/media/ywmoTiRyU43iU/giphy-downsized.gif?cid=e08e54c1ia4isc5dxa6hmpxeq7pbazm7q307a33zx9vokybc&ep=v1_gifs_trending&rid=giphy-downsized.gif&ct=g",
