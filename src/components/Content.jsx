@@ -2,10 +2,13 @@ import React from "react";
 
 const Content = ({ data }) => {
     return (
-        <div className="grid grid-cols-2 md:grid-cols-4 md:mb-0 mb-16">
-            {data.length > 1 ? (
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:mb-0 mb-16">
+            {data ? (
                 data.map((item, index) => (
-                    <div className="relative" key={index}>
+                    <div
+                        className="relative  bg-gradient-to-t from-[rgb(27_27_27/25%)] to-transparent"
+                        key={index}
+                    >
                         <img
                             src={item.image}
                             alt="content gif"

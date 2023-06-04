@@ -7,6 +7,7 @@ import Content from "../components/Content";
 
 const Gallery = () => {
     const [data, setData] = useState(allData);
+    const [search, setSearch] = useState("");
 
     const getGifs = () => {
         const filterData = allData.filter((items) => items.category === "GIFs");
@@ -28,13 +29,9 @@ const Gallery = () => {
         setData(filterData);
     };
 
-    const handleChange = (e) => {
-        e.preventDefault();
-        const filterData = allData.find(
-            (items) => items.name.toLowerCase() === e.target.value.toLowerCase()
-        );
-        console.log(filterData);
-        console.log(allData.name);
+    const handleChange = () => {
+        const filterData = allData.filter((items) => items.name === search);
+        setData(filterData);
     };
 
     return (
@@ -62,9 +59,9 @@ const Gallery = () => {
                             type="text"
                             placeholder="Search any assets"
                             className="rounded w-full relative px-3 focus:border-black h-12 border-2 border-black customShadow"
-                            onKeyUp={(e) => handleChange(e)}
+                            onChange={(e) => setSearch(e.target.value)}
                         />
-                        <button className="">
+                        <button className="" onClick={handleChange}>
                             <img
                                 src={searchIcon}
                                 alt="search"
