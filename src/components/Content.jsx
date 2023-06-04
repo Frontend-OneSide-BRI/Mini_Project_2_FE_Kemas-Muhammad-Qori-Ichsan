@@ -2,7 +2,7 @@ import React from "react";
 
 const Content = ({ data }) => {
     return (
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 md:mb-0 mb-16">
             {data.length > 1 ? (
                 data.map((item, index) => (
                     <div className="relative" key={index}>
@@ -12,7 +12,9 @@ const Content = ({ data }) => {
                             className="aspect-square w-full"
                         />
                         <div className="absolute bottom-0 left-0 p-2">
-                            <p className="text-white font-bold">{item.name}</p>
+                            <p className="text-white md:text-base text-sm font-bold">
+                                {item.name}
+                            </p>
                             <p className="text-white text-xs">
                                 {item.username}
                             </p>

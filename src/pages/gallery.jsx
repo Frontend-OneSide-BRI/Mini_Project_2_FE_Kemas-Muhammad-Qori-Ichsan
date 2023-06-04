@@ -18,7 +18,6 @@ const Gallery = () => {
         const filterData = allData.filter(
             (items) => items.category === "Clips"
         );
-        console.log(filterData);
         setData(filterData);
     };
 
@@ -26,25 +25,35 @@ const Gallery = () => {
         const filterData = allData.filter(
             (items) => items.category === "Stickers"
         );
-        console.log(filterData);
         setData(filterData);
+    };
+
+    const handleChange = (e) => {
+        e.preventDefault();
+        const filterData = allData.find(
+            (items) => items.name.toLowerCase() === e.target.value.toLowerCase()
+        );
+        console.log(filterData);
+        console.log(allData.name);
     };
 
     return (
         <div className="bg-base">
             <Navbar />
-            <div className="w-screen h-[60vh] flex justify-center items-end bg-base font-violet">
+            <div className="w-screen h-[50vh] md:h-[60vh] flex justify-center items-end bg-base font-violet">
                 <div className="text-center font-violet">
                     <div className="flex items-center justify-center mb-2">
-                        <h1 className="text-6xl">Sparks</h1>
-                        <p className="text-lg bg-purple transform transition duration-200 hover:rotate-6 -rotate-6 ml-2 p-3 rounded text-white border-2 border-black">
+                        <h1 className="text-3xl md:text-6xl">Sparks</h1>
+                        <p className="text-base md:text-lg bg-purple transform transition duration-200 hover:rotate-6 -rotate-6 ml-2 p-3 rounded text-white border-2 border-black">
                             Curiosity
                         </p>
-                        <h1 className="text-6xl ml-3">By</h1>
+                        <h1 className="text-3xl md:text-6xl ml-3">By</h1>
                     </div>
                     <div className="flex items-center justify-center">
-                        <h1 className="text-6xl">Looking at Funny</h1>
-                        <p className="text-lg bg-orange transform transition duration-200 hover:-rotate-6 rotate-6 ml-2 p-3 rounded text-white border-2 border-black">
+                        <h1 className="text-3xl md:text-6xl">
+                            Looking at Funny
+                        </h1>
+                        <p className="text-base md:text-lg bg-orange transform transition duration-200 hover:-rotate-6 rotate-6 ml-2 p-3 rounded text-white border-2 border-black">
                             Pictures
                         </p>
                     </div>
@@ -53,6 +62,7 @@ const Gallery = () => {
                             type="text"
                             placeholder="Search any assets"
                             className="rounded w-full relative px-3 focus:border-black h-12 border-2 border-black customShadow"
+                            onKeyUp={(e) => handleChange(e)}
                         />
                         <button className="">
                             <img

@@ -4,8 +4,8 @@ import Button from "./Button";
 
 const Featured = () => {
     return (
-        <div className="w-screen h-screen flex justify-evenly items-center bg-base">
-            <div className="flex justify-between items-center w-1/3">
+        <div className="w-screen h-screen flex md:flex-row flex-col justify-evenly items-center bg-base">
+            <div className="flex justify-between items-center md:w-1/3">
                 <div className="text-center font-violet font-bold">
                     <div className="flex items-center justify-center mb-2">
                         <h1 className="text-4xl">What OneSide</h1>
@@ -32,7 +32,7 @@ const Featured = () => {
                 </div>
             </div>
 
-            <div className="w-1/2 p-5 rounded-sm transform -rotate-3 bg-purple border-2 border-black bigShadow">
+            <div className="w-5/6 md:w-1/2 p-5 rounded-sm transform -rotate-3 bg-purple border-2 border-black bigShadow">
                 <Slider />
             </div>
         </div>
